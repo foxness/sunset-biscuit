@@ -6,5 +6,5 @@
     :dependencies [[org.clojure/clojure "1.10.0"]
                    [funcool/promesa "4.0.2"]
                    [org.clojure/core.async "0.6.532"]]
-    :repl-options {:init-ns lab2cloj.core})
+    :repl-options {:init-ns rivershy})
   

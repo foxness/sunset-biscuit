@@ -12,8 +12,10 @@
     (a/go-loop []
         (let [av (a/<! a)
             bv (a/<! b)]
-            (when (= av bv)
-                (a/>! r [av bv])
+            (when (or (some? av) (some? bv))
+                (when (= av bv)
+                    (a/>! r [av bv])
+                )
                 (recur)
             )
         )
